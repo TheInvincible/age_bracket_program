@@ -10,6 +10,6 @@ function ageBracket() {
 	else if (age >= 18 || age < 36)
 		console.log("You're amongst the youth");
 	else
-	console.log("You're an elder")
+		console.log("You're an elder")
 }
-console.log(ageBracket());
+ageBracket()
