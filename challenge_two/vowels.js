@@ -3,17 +3,17 @@
     Function countVowels takes a string eg string_
     returns an array of length 2 newArray = ['a', 'b']
  */
+let vowels = ['a', 'e', 'i','o','u']
 
-let string_ = 'excellent string';
-let vowels = [a,e,i,o,u];
-
-function countVowels(string) {
-  for (let v = 0; v < string_.length; v++) {
-    if (v = vowels) {
+function countVowels(string_) {
+  for (let v in vowels) {
+    console.log(vowels[v]);
+    if (string_[v] = vowels) {
       newArray = []
-      return newArray[v];
-      console.log(newArray);
+      newArray.push(string_[v])
     }
   }
-}
-countVowels(string_)
+  console.log(newArray);
+  // return newArray[string_[v]];
+};
+countVowels('excellent string')
