@@ -4,16 +4,30 @@
     returns an array of length 2 newArray = ['a', 'b']
  */
 let vowels = ['a', 'e', 'i','o','u']
+let newArray = []
 
-function countVowels(string_) {
-  for (let v in vowels) {
+function countVowels(word) {
+  for (v in vowels) {
     console.log(vowels[v]);
-    if (string_[v] = vowels) {
-      newArray = []
-      newArray.push(string_[v])
+    if (word.includes(vowels[v])) {
+      newArray.push(word);
     }
   }
   console.log(newArray);
   // return newArray[string_[v]];
 };
 countVowels('excellent string')
+
+// function countVowels(str) {
+//   const vowels = ['a', 'e', 'i', 'o', 'u'];
+//   let counte = 0;
+//     let newArray = []
+//   for (let v of str.toLowerCase()) {
+//     if (vowels.includes(v)) {
+//       counte++;
+//       console.log(newArray);
+//       newArray.push(v)
+//     }
+//   }
+// }
+// console.log(countVowels('excellent string'));
