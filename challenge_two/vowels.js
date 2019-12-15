@@ -3,31 +3,20 @@
     Function countVowels takes a string eg string_
     returns an array of length 2 newArray = ['a', 'b']
  */
-let vowels = ['a', 'e', 'i','o','u']
-let newArray = []
+let vowels = ['a', 'e', 'i','o','u'] // defining an array called vowels
+let newArray = [] // declaring a new array to house a list of items from a new string
 
-function countVowels(word) {
-  for (v in vowels) {
-    console.log(vowels[v]);
-    if (word.includes(vowels[v])) {
-      newArray.push(word);
+// Declaring a function that takes in word as an argument
+function countVowels(word) { 
+  for (v in word) { 
+    // for each postion in the given string
+    if (word.includes(vowels[v])) { 
+      // If the word includes any of the vowels
+      newArray.push((vowels[v])); 
+      // Add the found vowels to the previously empty list
     }
   }
   console.log(newArray);
   // return newArray[string_[v]];
 };
 countVowels('excellent string')
-
-// function countVowels(str) {
-//   const vowels = ['a', 'e', 'i', 'o', 'u'];
-//   let counte = 0;
-//     let newArray = []
-//   for (let v of str.toLowerCase()) {
-//     if (vowels.includes(v)) {
-//       counte++;
-//       console.log(newArray);
-//       newArray.push(v)
-//     }
-//   }
-// }
-// console.log(countVowels('excellent string'));
